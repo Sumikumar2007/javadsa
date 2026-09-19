@@ -1,8 +1,8 @@
 class Solution {
     public String reverseWords(String s) {
-        String[] words = s.trim().split("\\s+");
+         String[] words = s.trim().split("\\s+");
         
-        //Lo itni madad kardi hai abh is words array me saare words as elements agaye hai
+       
        int left = 0;
         int right = words.length - 1;
         
