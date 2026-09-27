@@ -1,16 +1,11 @@
 class Solution {
     public int missingNumber(int[] nums) {
-        int ans=0;
-        int n =nums.length;
-        Arrays.sort(nums);
+        int n=nums.length;
+        int bestsum=(n*(n+1)/2);
+        int currsum=0;
         for(int i=0;i<n;i++){
-            if(nums[i]==ans){
-                ans++;
-            }
-            else{
-                break;
-            }
+            currsum+=nums[i];
         }
-        return ans;
+        return bestsum-currsum;
     }
 }
